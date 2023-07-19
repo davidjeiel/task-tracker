@@ -1,18 +1,89 @@
-# Vue 3 + TypeScript + Vite
+# Task Tracker
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este é um repositório para um aplicativo de rastreamento de tarefas. O aplicativo permite que os usuários acompanhem suas tarefas diárias, estabeleçam prazos, adicionem notas e marquem as tarefas como concluídas.
 
-## Recommended IDE Setup
+## Funcionalidades
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Adicionar uma nova tarefa com título, descrição e data de vencimento.
+- Visualizar uma lista de todas as tarefas, incluindo as concluídas.
 
-## Type Support For `.vue` Imports in TS
+## Tecnologias utilizadas
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- HTML5, CSS3 e VUE3 para o desenvolvimento do front-end.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Pré-requisitos
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+Certifique-se de ter as seguintes ferramentas instaladas em seu sistema:
+
+- Node.js (versão 12 ou superior)
+
+## Configuração
+
+1. Clone este repositório em sua máquina local:
+
+   ```bash
+   git clone https://github.com/davidjeiel/task-tracker.git
+   ```
+
+2. Acesse o diretório do projeto:
+
+   ```bash
+   cd task-tracker
+   ```
+
+3. Instale as dependências do projeto:
+
+   ```bash
+   npm install
+   ```
+
+4. Copie o arquivo `.env.example` para `.env` e atualize as variáveis de ambiente, se necessário.
+
+5. Inicie o servidor de desenvolvimento:
+
+   ```bash
+   npm start
+   ```
+
+6. Abra o navegador e acesse `http://localhost:3000` para usar o aplicativo Task Tracker.
+
+## Uso
+
+Ao acessar o aplicativo Task Tracker, você será apresentado à interface principal, onde poderá visualizar todas as tarefas cadastradas. Use os recursos disponíveis para gerenciar suas tarefas:
+
+- Para adicionar uma nova tarefa, clique no botão "Adicionar Tarefa" e preencha os detalhes necessários.
+- Para marcar uma tarefa como concluída, clique no botão de marcação ao lado da tarefa.
+- Para editar uma tarefa existente, clique no botão "Editar" ao lado da tarefa e atualize os detalhes conforme necessário.
+- Para excluir uma tarefa, clique no botão "Excluir" ao lado da tarefa.
+- Use os filtros e opções de classificação para personalizar a exibição das tarefas.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você quiser melhorar este projeto, siga as etapas abaixo:
+
+1. Faça um fork deste repositório.
+2. Crie um branch para sua nova funcionalidade ou correção de bug:
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+   ```
+   ou
+   ```bash
+   git checkout -b bugfix/correcao
+   ```
+3. Faça as alterações desejadas e adicione os arquivos modificados:
+   ```bash
+   git add .
+   ```
+4. Faça um commit das alterações:
+   ```bash
+   git commit -m "Descrição das alterações"
+   ```
+5. Envie as alterações para o repositório remoto:
+   ```bash
+   git push origin nome-da-branch
+   ```
+6. Abra uma pull request no repositório original.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
